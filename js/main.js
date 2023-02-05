@@ -42,15 +42,10 @@ BackButton.onClick(function() {
     loadMain();
 })
 
+
 function setViewportData() {
     Telegram.WebApp.isExpanded ? weare.style.display = "block" : weare.style.display = "none";
-}
 
-Telegram.WebApp.onEvent('viewportChanged', setViewportData);
-setViewportData();
-
-
-function setViewportData() {
     $('.body').attr('style', '' + (Telegram.WebApp.isExpanded ? "background-image: url(img/lightFull.png); background-size: 100% 120vh;" : "background-image: url(img/light.png);"));
     $('.animation').attr('style', '' + (Telegram.WebApp.isExpanded ? 'margin-top: 100px; margin-bottom: 50px;' : 'margin-top: 0px;'));
 
