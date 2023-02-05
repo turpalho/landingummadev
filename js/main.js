@@ -40,7 +40,7 @@ BackButton.onClick(function() {
     loadMain();
 })
 
-$('.whoweare').attr('style', '' + (Telegram.WebApp.isExpanded ? 'display: block;' : 'display: none;'));
+$('.whoweare').attr('style', '' + ('display: block;' ? Telegram.WebApp.isExpanded : 'display: none;'));
 
 
 function setViewportData() {
