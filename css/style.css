@@ -115,12 +115,8 @@ body {
     font-size: 13px;
 }
 
-.whoweare {
+#whoweare {
     display: none;
-    color: #fff;
-    text-align: left;
-    font-size: 13px;
-    letter-spacing: 3%;
 }
 
 #faq-menu {

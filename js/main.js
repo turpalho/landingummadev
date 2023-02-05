@@ -3,6 +3,8 @@ let menuBtns = document.getElementById("main-sections");
 let faqPage = document.getElementById("faq-menu")
 let aboutPage = document.getElementById("abouts")
 
+let weare = document.getElementById("abouts")
+
 let BackButton = window.Telegram.WebApp.BackButton;
 BackButton.hide();
 
@@ -40,7 +42,12 @@ BackButton.onClick(function() {
     loadMain();
 })
 
-$('.whoweare').attr('style', '' + ('display: block;' ? Telegram.WebApp.isExpanded : 'display: none;'));
+function setViewportData() {
+    Telegram.WebApp.isExpanded ? weare.style.display = "block" : weare.style.display = "none";
+}
+
+Telegram.WebApp.onEvent('viewportChanged', setViewportData);
+setViewportData();
 
 
 function setViewportData() {
