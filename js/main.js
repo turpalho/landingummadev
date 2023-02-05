@@ -44,20 +44,21 @@ BackButton.onClick(function() {
 
 
 function setViewportData() {
-    Telegram.WebApp.isExpanded ? weare.style.display = "block" : weare.style.display = "none";
+    // Telegram.WebApp.isExpanded ? weare.style.display = "block" : weare.style.display = "none";
+    $('.abouts').attr('style', '' + (Telegram.WebApp.isExpanded ? 'display: block;' : 'display: none;'));
 
-    $('.body').attr('style', '' + (Telegram.WebApp.isExpanded ? "background-image: url(img/lightFull.png); background-size: 100% 120vh;" : "background-image: url(img/light.png);"));
-    $('.animation').attr('style', '' + (Telegram.WebApp.isExpanded ? 'margin-top: 100px; margin-bottom: 50px;' : 'margin-top: 0px;'));
+    // $('.body').attr('style', '' + (Telegram.WebApp.isExpanded ? "background-image: url(img/lightFull.png); background-size: 100% 120vh;" : "background-image: url(img/light.png);"));
+    // $('.animation').attr('style', '' + (Telegram.WebApp.isExpanded ? 'margin-top: 100px; margin-bottom: 50px;' : 'margin-top: 0px;'));
 
-    if (screenHeight > 800){
-        $('.support_btn').attr('style', '' + (Telegram.WebApp.isExpanded ? 'margin-top: 180px;' : 'margin-top: 0px;'));
-    }
-    else if (screenHeight > 760){
-        $('.support_btn').attr('style', '' + (Telegram.WebApp.isExpanded ? 'margin-top: 120px;' : 'margin-top: 0px;'));
-    }
-    else {
-        $('.support_btn').attr('style', '' + (Telegram.WebApp.isExpanded ? 'margin-top: 80px;' : 'margin-top: 0px;'));
-    }
+    // if (screenHeight > 800){
+    //     $('.support_btn').attr('style', '' + (Telegram.WebApp.isExpanded ? 'margin-top: 180px;' : 'margin-top: 0px;'));
+    // }
+    // else if (screenHeight > 760){
+    //     $('.support_btn').attr('style', '' + (Telegram.WebApp.isExpanded ? 'margin-top: 120px;' : 'margin-top: 0px;'));
+    // }
+    // else {
+    //     $('.support_btn').attr('style', '' + (Telegram.WebApp.isExpanded ? 'margin-top: 80px;' : 'margin-top: 0px;'));
+    // }
 }
 
 Telegram.WebApp.onEvent('viewportChanged', setViewportData);
