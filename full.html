@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Jost&family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script> <!--Подключаем скрипт от телеграм-->
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="main">
+            <div id="main-sections">
+                <div class="main-section" onclick="loadMenu();">Академия Криптохаляль</div>
+                <div class="main-section" onclick="loadMenu();">Smart money</div>
+                <div class="main-skalp" onclick="loadMenu();">
+                    <div class="skalp">Скальпинг для мужчин</div>
+                    <div class="skalp">Скальпинг для женщин</div>
+                </div>
+                <div class="main-foot">
+                    <div class="foot" onclick="loadFaq();">Crypto Kids</div>
+                    <div class="foot" onclick="loadFaq();">____FAQ____</div>
+                </div>
+            </div>
+        </div>
+        <div id="abouts">
+            <div class="about-abouts">
+                <center>
+                    <img src="img/bitcoin.png" class="coin2">
+                    <img src="img/bitcoin.png" class="coin">
+                    <img src="img/bigLight.png" class="bigLight">
+                    <div class="item">
+                        <p class="about-text">Академия Crypto Halal - обучающая платформа для тех, кого интересует сфера криптовалют и цифровых инвестиций. 
+                            <br>Мы поможем вам выйти на стабильный доход дозволенным путём иншаАллах.</p>
+                        <hr>
+                        <p class="about-text">Наша академия это: 
+                            <br>▫️ Полноценное шариатское образование в сфере криптовалют 
+                            <br>▫️ Комфортные условия для братьев и сестёр
+                            <br>▫️ Религиозная основа
+                            <br>▫️ Сильный преподавательский состав с опытом в
+                               трейдинге</p>
+                        <hr>
+                        <p class="about-text">Направления обучения:
+                            <br>• Скальпинг
+                            <br>• Smart Money
+                            <br>• P2P торговля (Арбитраж)</p>
+                        <hr>
+                        <p class="whoweare">Кто мы:
+                            <br>Основатель проекта Cryptohalal профессор Мухаммад Юсуф Абу Джазар - специалист в области исламских финансов и экономики, в том числе криптовалют; кандидат наук сравнительного правоведения; в прошлом – член Совета по фетвам Ассоциации учёных Палестины. Ныне глава комитета Cryptohalal, занимающегося разбором крипто проектов на дозволенность.</p>
+                    </div>
+                </center>
+            </div>
+        </div>
+        <div id="faq-menu">
+            <div class="faq-menus">
+                <center>
+                    <div class="item">
+                        <div class="item-text">
+                            <h1 class="faq">F.A.Q</h1>
+                        </div>
+                        <div class="animation">
+                            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_wloxwco0.json"  background="transparent"  speed="1"  style="width: 210px; margin: auto;"  loop autoplay></lottie-player>
+                        </div>
+                        <div class="faq-class" style="margin: auto; margin-left: 20px; margin-right: 20px; max-width: 400px;">
+                                <div style="margin-bottom: 15px;">
+                                    <a id='1' href="#">
+                                        <div id="d1" style="height: 35px; display: flex; color: #fff; border-radius: 10px; background-image: linear-gradient(138deg, rgba(170,62,166,0.6) 0%, rgba(87,170,211,0.6) 100%);">
+                                            <h6 id="h61" style="margin:auto; margin-left: 5px; font-size: 12pt; font-family: 'Comfortaa', cursive;">Ваши курсы аманат?</h6>
+                                            <img id="img1" src="img/arrow.svg" style="width:25px; margin: auto; margin-right: 5px;"/>
+                                        </div>
+                                    </a>
+                                    <p id="11" style="display: none; font-size: 12px; font-family: 'Comfortaa', cursive; letter-spacing: 1px;">Да, вы можете изучать наши курсы только с женой/мужем и детьми!</p> 
+                                </div>
+                                <div style="margin-bottom: 15px;">
+                                    <a id='2' href="#">
+                                        <div id="d2" style="height: 35px; display: flex; color: #fff; border-radius: 10px; background-image: linear-gradient(138deg, rgba(170,62,166,0.6) 0%, rgba(87,170,211,0.6) 100%);">
+                                            <h6 id="h62" style="margin:auto; margin-left: 5px; font-size: 12pt; font-family: 'Comfortaa', cursive;">Какой курс мне посоветуете?</h6>
+                                            <img id="img2" src="img/arrow.svg" style="width:25px; margin: auto; margin-right: 5px;"/>
+                                        </div>
+                                    </a>
+                                    <p id="21" style="display: none; font-size: 12px; font-family: 'Comfortaa', cursive; letter-spacing: 1px;">Если вы новичок - начните с бонусного курса по криптологии.</p>
+                                </div>
+                                <div>
+                                    <a id='3' href="#">
+                                        <div  id="d3" style="height: 35px; display: flex; color: #fff; border-radius: 10px; background-image: linear-gradient(138deg, rgba(170,62,166,0.6) 0%, rgba(87,170,211,0.6) 100%);">
+                                            <h6 id="h63" style="margin:auto; margin-left: 5px; font-size: 12pt; font-family: 'Comfortaa', cursive;">А рассрочка есть?</h6>
+                                            <img id="img3" src="img/arrow.svg" style="width:25px; margin: auto; margin-right: 5px;"/>
+                                        </div>
+                                    </a>
+                                    <p id="31" style="display: none; font-size: 12px; font-family: 'Comfortaa', cursive; letter-spacing: 1px;">Есть, но не на каждый курс, напишите нам - поможем!</p> 
+                                </div>
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
