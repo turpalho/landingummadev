@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "FuturaMD";
+    src: url("../fonts/futura_md.otf");
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: "FuturaMD";
+    background-image: linear-gradient(143.87deg, #5B209E -0.97%, #190D23 68.45%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#main {
+    margin: 30px;
+}
+
+#main-sections {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.main-section {
+    width: 100%;
+	height: 80px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 20px;
+    color: #DFDCD5;
+    background: linear-gradient(143.1deg, rgba(255, 255, 255, 0.162) 10.85%, rgba(255, 255, 255, 0.054) 169.7%, rgba(255, 255, 255, 0) 169.7%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));       
+}
+
+.main-skalp {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: auto auto;
+}
+
+.skalp {
+    width: 100%;
+	height: 80px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    text-align: center;
+
+	border-radius: 20px;
+    color: #DFDCD5;
+    background: linear-gradient(143.1deg, rgba(255, 255, 255, 0.162) 10.85%, rgba(255, 255, 255, 0.054) 169.7%, rgba(255, 255, 255, 0) 169.7%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
+
+.main-foot {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: auto auto;
+}
+
+.foot {
+    width: 100%;
+	height: 80px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    text-align: center;
+
+	border-radius: 20px;
+    color: #DFDCD5;
+    background: linear-gradient(143.1deg, rgba(255, 255, 255, 0.162) 10.85%, rgba(255, 255, 255, 0.054) 169.7%, rgba(255, 255, 255, 0) 169.7%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
+
+#abouts {
+    display: none;
+}
+
+.about-abouts {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.coin2 {
+    width: 82px;
+    top: 26px;
+    left: -30px;
+    position: absolute;
+    z-index: -99;
+}
+
+.coin {
+    width: 70px;
+    top: 217px;
+    left: 80px;
+    position: absolute;
+    z-index: -99;
+}
+
+.bigLight {
+    bottom: -10px;
+    left: -10px;
+    position: absolute;
+    z-index: -99;
+}
+
+.about-text {
+    color: #fff;
+    text-align: left;
+    font-size: 13px;
+}
+
+.whoweare {
+    display: none;
+    color: #fff;
+    text-align: left;
+    font-size: 13px;
+    letter-spacing: 3%;
+}
+
+#faq-menu {
+    display: none;
+}
