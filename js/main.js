@@ -47,6 +47,9 @@ function setViewportData() {
     // Telegram.WebApp.isExpanded ? weare.style.display = "block" : weare.style.display = "none";
     $('.whoweare').attr('style', '' + (window.Telegram.WebApp.isExpanded ? 'display: block;' : 'display: none;'));
 
+    $('.viewport_border').attr('text', window.innerWidth + ' x ' + round(Telegram.WebApp.viewportHeight, 2));
+    $('.viewport_stable_border').attr('text', window.innerWidth + ' x ' + round(Telegram.WebApp.viewportStableHeight, 2) + ' | is_expanded: ' + (Telegram.WebApp.isExpanded ? 'true' : 'false'));
+
     // $('.body').attr('style', '' + (Telegram.WebApp.isExpanded ? "background-image: url(img/lightFull.png); background-size: 100% 120vh;" : "background-image: url(img/light.png);"));
     // $('.animation').attr('style', '' + (Telegram.WebApp.isExpanded ? 'margin-top: 100px; margin-bottom: 50px;' : 'margin-top: 0px;'));
 
