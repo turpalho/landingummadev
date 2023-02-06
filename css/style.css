@@ -103,8 +103,8 @@ body {
 }
 
 .LbigLight {
-    bottom: var(--tg-viewport-stable-height, 0);
-    left: var(--tg-viewport-stable-height, 0);
+    bottom: var(--tg-viewport-height, 0);
+    left: var(--tg-viewport-height, 0);
     position: absolute;
     z-index: -99;
 }
@@ -113,9 +113,13 @@ body {
     color: #fff;
     text-align: left;
     font-size: 13px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: margin-bottom 1s, margin-top 1s ease-out;
 }
 
 .whoweare {
+    margin-top: 20px;
     opacity: 0;
     color: #fff;
     text-align: left;
