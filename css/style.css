@@ -116,11 +116,12 @@ body {
 }
 
 .whoweare {
-    display: none;
+    visibility: hidden;
     color: #fff;
     text-align: left;
     font-size: 13px;
     letter-spacing: 3%;
+    transition: visibility 1s, opacity 0.5s ease-out;
 }
 
 #faq-menu {

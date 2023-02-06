@@ -44,7 +44,9 @@ BackButton.onClick(function() {
 
 
 function setViewportData() {
-    $('.whoweare').attr('style', '' + (Telegram.WebApp.isExpanded ? 'display: block;' : 'display: none;'));
+    $('.whoweare').attr('style', '' + (Telegram.WebApp.isExpanded ? 'visibility: visible;' : 'visibility: hidden;'));
+    // $('.whoweare').attr('style', '' + (Telegram.WebApp.isExpanded ? 'transition: visibility 1s, opacity 0.5s ease-out;' : 'transition: visibility 1s, opacity 0.5s ease-out;'));
+    
 }
 
 window.Telegram.WebApp.onEvent('viewportChanged', setViewportData);
