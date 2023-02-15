@@ -7,7 +7,7 @@ body {
     height: 100%;
     margin: 0;
     font-family: "FuturaMD";
-    background: linear-gradient(143.87deg, #284AA4 43.85%, #172F6C 87.67%);
+    background: linear-gradient(143.87deg, #1E61B7 43.85%, #082140 87.67%);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -29,7 +29,8 @@ body {
 	align-items: center;
 	justify-content: center;
 
-	border-radius: 20px;
+	border-radius: 7px;
+    backdrop-filter: blur(10px);
     color: #DFDCD5;
     background: linear-gradient(143.1deg, rgba(255, 255, 255, 0.162) 10.85%, rgba(255, 255, 255, 0.054) 169.7%, rgba(255, 255, 255, 0) 169.7%),
     linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));       
@@ -41,6 +42,15 @@ body {
     grid-template-columns: auto auto;
 }
 
+.setka {
+    width: 100%;
+    position: absolute;
+    z-index: -99;
+    opacity: 0.7;
+    left: 0;
+    right: 0;
+}
+
 .skalp {
     width: 100%;
 	height: 80px;
@@ -50,7 +60,8 @@ body {
 	justify-content: center;
     text-align: center;
 
-	border-radius: 20px;
+	border-radius: 7px;
+    backdrop-filter: blur(10px);
     color: #DFDCD5;
     background: linear-gradient(143.1deg, rgba(255, 255, 255, 0.162) 10.85%, rgba(255, 255, 255, 0.054) 169.7%, rgba(255, 255, 255, 0) 169.7%),
     linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
@@ -71,7 +82,8 @@ body {
 	justify-content: center;
     text-align: center;
 
-	border-radius: 20px;
+	border-radius: 7px;
+    backdrop-filter: blur(10px);
     color: #DFDCD5;
     background: linear-gradient(143.1deg, rgba(255, 255, 255, 0.162) 10.85%, rgba(255, 255, 255, 0.054) 169.7%, rgba(255, 255, 255, 0) 169.7%),
     linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
@@ -103,10 +115,11 @@ body {
 }
 
 .LbigLight {
-    bottom: var(--tg-viewport-height, 0);
-    left: var(--tg-viewport-height, 0);
+    bottom: 0;
+    left: 0;
     position: absolute;
     z-index: -99;
+    transition: bottom 1s, left 1s ease-out;
 }
 
 .about-text {
