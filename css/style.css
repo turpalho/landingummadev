@@ -7,7 +7,7 @@ body {
     height: 100%;
     margin: 0;
     font-family: "FuturaMD";
-    background: linear-gradient(143.87deg, #1E61B7 43.85%, #082140 87.67%);
+    background: linear-gradient(143.87deg, #284AA4 43.85%, #172F6C 87.67%);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -19,6 +19,7 @@ body {
 #main-sections {
     display: grid;
     grid-gap: 20px;
+    transition: display 1s ease-out;
 }
 
 .main-section {
@@ -44,13 +45,21 @@ body {
     grid-template-columns: auto auto;
 }
 
-.setka {
+.crypto {
     width: 100vw;
     position: absolute;
-    z-index: -99;
-    opacity: 0.7;
-    left: 0;
+    z-index: -100;
     right: 0;
+    top: 240px;
+}
+
+.crypto_abauts {
+    width: 100vw;
+    position: absolute;
+    z-index: -100;
+    right: 0;
+    top: 240px;
+    filter: blur(5px);
 }
 
 .skalp {
@@ -97,6 +106,7 @@ body {
 
 #abouts {
     display: none;
+    transition: display 1s ease-out;
 }
 
 .about-abouts {
@@ -148,4 +158,5 @@ body {
 
 #faq-menu {
     display: none;
+    transition: display 1s ease-out;
 }
