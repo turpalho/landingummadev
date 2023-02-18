@@ -160,12 +160,12 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    transition: background 1s, margin-bottom 1s, margin-top 1s ease-out;
+    transition: -webkit-text-fill-color 1s, margin-bottom 1s, margin-top 1s ease-out;
 }
 
 .hr-opacity {
     opacity: 0;
-    transition: visibility 1s, opacity 1s ease-out;
+    transition: opacity 1s ease-out;
 }
 
 .whoweare {
