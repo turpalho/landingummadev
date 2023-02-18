@@ -46,7 +46,7 @@ BackButton.onClick(function() {
 function setViewportData() {
     $('.whoweare').attr('style', '' + (Telegram.WebApp.isExpanded ? 'opacity: 1;' : 'opacity: 0;'));
     $('.hr-opacity').attr('style', '' + (Telegram.WebApp.isExpanded ? 'opacity: 1;' : 'opacity: 0;'));
-    $('.hr-opacity').attr('style', '' + (Telegram.WebApp.isExpanded ? 'background: #fff;' : 'background: linear-gradient(180deg, rgba(255, 255, 255, 0.54) 0%, rgba(255, 255, 255, 0.1) 68.27%);'));
+    $('.about-text-opacity').attr('style', '' + (Telegram.WebApp.isExpanded ? '-webkit-text-fill-color: #fff; margin-bottom: 30px; margin-top: 30px;' : '-webkit-text-fill-color: transparent; margin-bottom: 25px; margin-top: 25px;'));
     $('.about-text').attr('style', '' + (Telegram.WebApp.isExpanded ? 'margin-bottom: 30px; margin-top: 30px;' : 'margin-bottom: 25px; margin-top: 25px;'));
     // $('.whoweare').attr('style', '' + (Telegram.WebApp.isExpanded ? 'transition: visibility 1s, opacity 0.5s ease-out;' : 'transition: visibility 1s, opacity 0.5s ease-out;'));
     
