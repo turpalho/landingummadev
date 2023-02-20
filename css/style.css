@@ -38,6 +38,13 @@ body {
     linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));       
 }
 
+.item {
+    width: 100%;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .main-skalp {
     display: grid;
     column-gap: 20px;
