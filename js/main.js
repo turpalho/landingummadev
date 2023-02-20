@@ -11,8 +11,14 @@ BackButton.hide();
 let selectedSection = 'main';
 
 function loadMenu() {
-    menuBtns.style.display = "none";
+    menuBtns.style.opacity = 0;
+    setTimeout(function() {
+        menuBtns.style.display = "none";
+      }, 500);
     aboutPage.style.display = "block";
+    setTimeout(function() {
+        aboutPage.style.opacity = 1;
+      }, 10);
     if (!BackButton.isVisible) {
         BackButton.show();
     }
@@ -21,7 +27,13 @@ function loadMenu() {
 function loadMain() {
 
     menuBtns.style.display = "grid";
-    aboutPage.style.display = "none";
+    setTimeout(function() {
+        menuBtns.style.opacity = 1;
+      }, 10);
+    aboutPage.style.opacity = 0;
+    setTimeout(function() {
+        aboutPage.style.display = "none";
+      }, 500);
     faqPage.style.display = "none";
 
     /* Telegram WebApp */
