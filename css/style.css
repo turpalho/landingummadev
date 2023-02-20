@@ -105,11 +105,7 @@ body {
 
 #abouts {
     display: none;
-}
-
-.about-abouts {
-    padding-left: 20px;
-    padding-right: 20px;
+    margin: 30px;
 }
 
 .coin2 {
@@ -140,8 +136,8 @@ body {
     text-align: left;
     font-size: 16px;
     line-height: 130%;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     align-items: center;
     text-align: justify; 
     transition: margin-bottom 1s, margin-top 1s ease-out;
@@ -151,8 +147,8 @@ body {
     color: #fff;
     text-align: left;
     font-size: 16px;
-    margin-bottom: 25px;
-    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
     line-height: 130%;
     align-items: center;
     text-align: justify; 
@@ -169,7 +165,7 @@ body {
 }
 
 .whoweare {
-    margin-top: 25px;
+    margin-top: 15px;
     opacity: 0;
     color: #fff;
     text-align: left;
